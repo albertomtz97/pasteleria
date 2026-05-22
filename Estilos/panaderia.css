@@ -1,39 +1,172 @@
-
-/*Section del Footer*/
-footer{
- display: flex;
- 
+*{
+    box-sizing: border-box;/*para poner ancho y alto a los elementos*/
 }
 
-.footer-izq{
- background-color: #e8c686;
- width: 60%;
- display: flex;
- padding: 60px 40px;
- align-items: normal;
- justify-content: center;
- font-style: italic;
- font-weight: bold;
- font-size: x-large;
- text-align: center;
-}
+/*Body*/
+.menu{
 
-.footer-der{
-    background-color: #cca45c;
     display: flex;
-    width: 40%;
-    padding: 60px 20px;
-    align-items: end ;
     justify-content: center;
+    align-items: center;
 }
 
 
-img{
-    width: 300px;
-    height: 150px;
-    padding: 30px;
+
+
+/*Section*/
+.contenedor{
+    width: 100%;
+    display: flex;
+    max-width: 1300px; /*max. de ancho*/
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 60px;/*Espacion entre cada uno*/
+    margin: 20px;   
 }
-div h2{
+
+.card {
+    margin: 20px;
+    width: 200px;
+    height: 300px;
+    border-radius: 6px;
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+}
+/*1era Fila*/
+.card-bolillo{
+    background-image:url(/Imagenes/bolillo-ajonjoli.jpg) ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.card-chapata{
+    background-image:url(/Imagenes/chapata.jpg) ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.card-bolillo2{
+    background-image:url(/Imagenes/torta-de-agua.jpg) ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+/*2da Fila*/
+.card-barram{
+    background-image:url(/Imagenes/media\ barra.jpg) ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.card-barra4{
+    background-image:url(/Imagenes/barra-400.jpg) ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.card-barrarus{
+    background-image:url(/Imagenes/barra-rustica.jpg) ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+/*3er Fila*/
+/*Clases de cada una de los panes */
+.card-concha{ /*Aquimodifico cada una de las imagenes por separado, teniendo la configuracion de card que funciona para todas*/
+    background-image: url(/Imagenes/concha-2.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.card-conchab{
+    background-image:url(/Imagenes/concha-1.jpg) ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.card-dona{
+    background-image:url(/Imagenes/dona.jpg) ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+/*4ta Fila*/
+.card-berlinesa{ 
+    background-image: url(/Imagenes/berlinesa.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.card-chocolatin{
+    background-image:url(/Imagenes/chocolatin.jpg) ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.card-muffin{
+    background-image:url(/Imagenes/muffin\ vainilla.jpg) ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+/*5ta Fila*/
+.card-polvoron{ 
+    background-image: url(/Imagenes/polvoron.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.card-polvoron2{
+    background-image:url(/Imagenes/polvoron-trescolores.jpg) ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.card-oreja{
+    background-image:url(/Imagenes/oreja.jpg) ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+/*6ta Fila*/
+.card-cuernito{ 
+    background-image: url(/Imagenes/cuernito.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.card-bisquet{
+    background-image:url(/Imagenes/bisquet.jpg) ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.card-oreja2{
+    background-image:url(/Imagenes/oreja-integral.jpg) ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+
+.contenido{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .4);
+    opacity: 0;
+    transition: .5s;
+}
+
+.contenido h3{
     text-align: center;
-    font-style: italic;
+    font-size: x-large;
+    color: rgba(255, 255, 255, .8);
+
 }
+
+.card:hover .contenido{ /*al elemento card, cuando hago hover(mouse), aplicamos etilos a elemento contenido*/
+    opacity: 1;
+}
+
+
+
+

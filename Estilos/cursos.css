@@ -3,7 +3,7 @@
 }
 
 /*Body*/
-section{
+.seccion-cursos{
 
     display: flex;
     justify-content: center;
@@ -17,6 +17,7 @@ section{
     max-width: 1300px; /*max. de ancho*/
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    place-items: center;
     gap: 60px;/*Espacion entre cada uno*/
     margin: 20px;
     

@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;/*para poner ancho y alto a los elementos*/
+}
+
+/*Body*/
+.menu{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Section*/
+.contenedor{
+    width: 100%;
+    display: flex;
+    max-width: 1300px; /*max. de ancho*/
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 60px;/*Espacion entre cada uno*/
+    margin: 20px;   
+}
+
+.card {
+    margin: 20px;
+    width: 200px;
+    height: 300px;
+    border-radius: 6px;
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+    background-color: #ffffff82;
+}
+
+/*1era Fila*/
+.card-prueba{
+    background-image:url(/Imagenes/chv.png) ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.card-prueba2{
+    background-image:url(/Imagenes/milhojas.webp) ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.card-{
+    background-image:url() ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.card-{
+    background-image:url() ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+/*2da Fila*/
+
+/*3er Fila*/
+
+/*4ta Fila*/
+
+
+
+
+
+.contenido{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .4);
+    opacity: 0;
+    transition: .5s;
+}
+
+.contenido h3{
+    text-align: center;
+    font-size: x-large;
+    color: rgba(255, 255, 255, .8);
+
+}
+
+.card:hover .contenido{ /*al elemento card, cuando hago hover(mouse), aplicamos etilos a elemento contenido*/
+    opacity: 1;
+}
