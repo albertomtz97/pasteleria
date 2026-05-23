@@ -9,6 +9,12 @@
     justify-content: center;
     align-items: center;
 }
+.titulo-menu{
+  text-align: center;  
+  margin: 25px;
+  font-weight: bolder;
+  font-style: italic;
+}
 
 /*Section*/
 .contenedor{
@@ -18,7 +24,8 @@
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 60px;/*Espacion entre cada uno*/
-    margin: 20px;   
+    margin: 20px;  
+    place-items: center; 
 }
 
 .card {
@@ -32,32 +39,77 @@
 }
 
 /*1era Fila*/
-.card-prueba{
-    background-image:url(/Imagenes/chv.png) ;
+.card-pastel-fresas{
+    background-image:url(/Imagenes/pastel-fresas.webp) ;
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
-.card-prueba2{
+.card-pastel-cho3leches{
+    background-image:url(/Imagenes/pastel-3leches-chocolate.webp) ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.card-pastelmilhojas{
     background-image:url(/Imagenes/milhojas.webp) ;
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
-.card-{
-    background-image:url() ;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-.card-{
-    background-image:url() ;
+.card-pasteltiramisu{
+    background-image:url(/Imagenes/pastel-tiramisu.webp) ;
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
 /*2da Fila*/
+.card-pastelsalon{
+    background-image:url(/Imagenes/pastelsalon.webp) ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.card-pastelmascarpone{
+    background-image:url(/Imagenes/pastelmascarpone.webp) ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.card-pastelmoka{
+    background-image:url(/Imagenes/pastelmoka.webp) ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.card-pasteldurazno{
+    background-image:url(/Imagenes/pasteldurazno.webp) ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
 
 /*3er Fila*/
+.card-pastelcarajillo{
+    background-image:url(/Imagenes/pastelcarajollo.webp) ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.card-pastelzanahoria{
+    background-image:url(/Imagenes/pastelzanahoriaindv.webp) ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.card-chux{
+    background-image:url(/Imagenes/chouxindv.webp) ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.card-pastelnapoleon{
+    background-image:url(/Imagenes/napoleonindv.webp) ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
 
 /*4ta Fila*/
+.card-pastel4chocolate{
+    background-image:url(/Imagenes/cuatrochocolateindv.webp) ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
 
 
 

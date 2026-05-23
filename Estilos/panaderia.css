@@ -12,6 +12,13 @@
 
 
 
+.titulo-menu{
+  text-align: center;  
+  margin: 25px;
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 1cm;
+}
 
 /*Section*/
 .contenedor{
@@ -22,6 +29,7 @@
     grid-template-columns: repeat(3,1fr);
     gap: 60px;/*Espacion entre cada uno*/
     margin: 20px;   
+    place-items: center;
 }
 
 .card {
