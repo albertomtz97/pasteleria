@@ -1,0 +1,21 @@
+.titulo-comentarios{
+  text-align: center;  
+  margin: 25px;
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 1cm;
+}
+
+.comentarios{
+    
+    text-align: center;
+    font-style: italic;
+    border-radius: 15px;
+    background-color: #c79a4f;
+    margin: 15px auto; /*auto= centrarlo*/
+    padding: 15px;
+    width: 400px;
+}
+
+
+
