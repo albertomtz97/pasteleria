@@ -6,6 +6,70 @@
   font-size: 1cm;
 }
 
+.card{
+  margin: 20px;
+  padding: 10px;
+  
+  width: 30%;
+  border-radius: 6px;
+  overflow: hidden; /*para que no de desborde a la derecha*/
+  background: white;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);/*horizontal,vertical,difuminado*/
+  transition: all 400ms ease;
+}
+
+.card:hover{
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-5%)
+}
+
+.emote{
+  font-size: 64px;
+  line-height: 1;
+  color: #e8a126;
+  opacity: 0.75;
+  margin-bottom: 12px;
+}
+
+.contenido{
+  min-height: 120px;
+  margin-bottom: 24px;
+}
+.texto{
+  margin: 0;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1.7;
+  color: #3c3418;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+.card-usuario{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+.avatar{
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(250, 206, 96, 0.833);
+}
+
+.card h2{
+  font-weight: bolder;
+}
+
+.estrellas{
+  margin: 30px;
+  color: #fbbf24;
+}
+
+
+
+
+/*Form*/
 .comentarios{
     
     text-align: center;
